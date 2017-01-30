@@ -65,9 +65,8 @@ b = raw_input()
 #""MAIN""#
 while(b != "stop"):
     try :
-        if  b != "stop":
-            b = int(b,16)
-            HexToBase64(b)
+         b = int(b,16)
+         HexToBase64(b)
     except ValueError :
          b = ErrorToHex(b)
          b = int(b,16)
