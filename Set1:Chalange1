@@ -12,7 +12,7 @@ def HexToBase64(s):
         s = s / 2
         if s == 1:
             list.append(1)
-    #adds 0 to the end of the array,if the bin number dosent start with 1
+    #adds 0 to the end of the array,if the bin array length is odd(so somthing like this won't happen: 0b111,insted:0b0111 )
     if(len(list) % 2 != 0):
         list.append(0)
     #reversing the array after breaking down the intger
