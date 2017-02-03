@@ -4,8 +4,8 @@ Note that i will try not to use any library.
 Because I'm tring to fully understand every thing.
 ## Current Progress:
 [2/64]
-### 1.Set I[2/8]:
-[X]..*1.Convert hex to base64(+ascii to base64)
-[X]2.Fixed XOR</br>
-[  ]3.Single-byte XOR cipher
+### Set I[2/8]:
+..*1.Convert hex to base64(+ascii to base64)
+2.Fixed XOR</br>
+3.Single-byte XOR cipher
 
