@@ -1,4 +1,4 @@
-# Cryptopals-Chalange
+# Cryptopals-Challenge
 Those are my solutions for the Cryptopals Challenge https://cryptopals.com.</br>
 ####Note:I'm not using any Library.
 ## Current Progress:
