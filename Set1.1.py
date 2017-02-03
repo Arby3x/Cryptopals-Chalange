@@ -16,11 +16,7 @@ def HexToBase64(s):
     if(len(list) % 2 != 0):
         list.append(0)
     #reversing the array after breaking down the intger
-    i = len(list)
-    list2 = []
-    while  i > 0:
-        list2.append(list[i - 1])
-        i-=1
+    list2=list[::-1]
     msglen = len(list2)
     #checks if the number of bytes divisible by 3,if not adding the amount of
     #bytes missing
@@ -61,12 +57,16 @@ def HexToBase64(s):
 #if ascii char detected,convert to hex
 def ErrorToHex(s):
     return s.encode("hex")
-b = raw_input()
+b = raw_input("Enter you hex string / Ascii string(or stop)")
 #""MAIN""#
 while(b != "stop"):
     try :
-         b = int(b,16)
-         HexToBase64(b)
+        if len(b)%2!=0:
+            temp=b[:len(b)-1]
+            temp=temp+"0"+b[len(b)-1:]
+            b=temp
+        b = int(b,16)
+        HexToBase64(b)
     except ValueError :
          b = ErrorToHex(b)
          b = int(b,16)
@@ -76,7 +76,7 @@ while(b != "stop"):
 #originally i planned it to convert only hex to base64,but i thought that i can add ascii also
 #and then it broke
 #Working on fixing the following those problems:
-#cant convert properly odd len hex strings
+#[FIXED]cant convert properly odd len hex strings
 #What dose work:
 #assci to base64
 #even len hex strings
