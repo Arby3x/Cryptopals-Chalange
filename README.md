@@ -1,7 +1,6 @@
 # Cryptopals-Chalange
-Those are my solutions for the Cryptopals Challenge (https://cryptopals.com/).
-Note that i will try not to use any library.
-Because I'm tring to fully understand every thing.
+Those are my solutions for the Cryptopals Challenge https://cryptopals.com.</br>
+####Note:I'm not using any Library.
 ## Current Progress:
 [2/64]
 ### Set I[2/8]:
